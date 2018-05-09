@@ -1,52 +1,172 @@
-.weather img {
-	width: 40px;
-	height: 40px;
-}
-
-.details img {
-	width: 150px;
-	height: 150px;
-}
-
-header .title {
-	text-decoration: none;
+body {
+	padding: 0% 5% 0% 5%;
 	color: grey;
 }
 
-.nav-image {
-	padding-top: 15px;
-	height: 80px;
-	width: 80px;
+div {
+	padding: 1em;
 }
 
-.nav-title {
-	position: relative;
-	padding-top: 10px;
-	vertical-align: middle;
-	font-size: 50px;
-}
-
-.nav-link {
-	display: inline-flex;
-	list-style-type: none;
-	text-align: center;
+a {
+	text-decoration: none;
 }
 
 li {
 	list-style-type: none;
 }
 
-.nav-link .nav-item {
-	padding-left: 50px;
+img {
+	width: 100%;
+	height: 100%;
+}
+
+.banner-image {
+	padding-top: 15px;
+	height: 80px;
+	width: 80px;
+}
+
+.banner-title {
+	position: relative;
+	padding-top: 10px;
+	vertical-align: middle;
+	font-size: 40px;
 	color: grey;
 }
 
-/*.table-score {
-	position: relative;
-	width: 50%;
+.navbar {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-column-gap: 1em;
+	justify-items: center;
 }
 
-.table-weather {
-	position: relative;
+.news-highlight {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 1em;
+	grid-auto-rows: minmax(300px, auto);
+}
+
+.news-highlight img {
+	width: 100%;
+}
+
+.overlay-text {
+	display: none;
+}
+
+.reports {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 1em;
+}
+
+.score {
+	width: 100%;
+}
+
+.score tr:nth-child(even) {
+	background-color: lightgrey;
+}
+
+.weather {
+	width: 100%;
+}
+
+.weather img {
 	width: 50%;
-}*/
+	height: 25%;
+}
+
+.latest-news img {
+	height: 25%;
+}
+
+.footer {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 1em;
+	justify-items: center;
+}
+
+/*for medium screen*/
+@media screen and (max-width: 640px) {
+	.news-highlight {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-column-gap: 1em;
+		grid-auto-rows: minmax(300px, auto);
+	}
+
+	.reports {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-column-gap: 1em;
+	}
+}
+
+/*for smaller screens*/
+@media screen and (max-width: 320px) {
+	.banner-image {
+		padding-top: 10px;
+		height: 50px;
+		width: 50px;
+	}
+
+	.banner-title {
+		position: relative;
+		padding-top: 5px;
+		vertical-align: middle;
+		font-size: 25px;
+		color: grey;
+	}
+
+	.navbar {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-column-gap: 0em;
+		justify-items: center;
+	}
+
+	.news-highlight {
+		display: grid;
+		grid-template-columns: 1fr;
+		/*grid-column-gap: 1em;*/
+		/*grid-auto-rows: minmax(300px, auto);*/
+	}
+
+	.image-container img {
+		width: 100%;
+	}
+
+	.image-container {
+		position: relative;
+		padding: 0px;
+		margin: 0px;
+	}
+
+	.overlay-text {
+		position: absolute;
+		width: 100%;
+		bottom: 2px;
+		background-color: black;
+		opacity: .7;
+		display: inline;
+		padding: 0px;
+	}
+
+	.overlay-text p {
+		padding-left: 4px;
+	}
+
+	.news-detail {
+		display: none;
+	}
+
+	.reports {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-column-gap: 1em;
+	}
+}
