@@ -1,0 +1,52 @@
+.weather img {
+	width: 40px;
+	height: 40px;
+}
+
+.details img {
+	width: 150px;
+	height: 150px;
+}
+
+header .title {
+	text-decoration: none;
+	color: grey;
+}
+
+.nav-image {
+	padding-top: 15px;
+	height: 80px;
+	width: 80px;
+}
+
+.nav-title {
+	position: relative;
+	padding-top: 10px;
+	vertical-align: middle;
+	font-size: 50px;
+}
+
+.nav-link {
+	display: inline-flex;
+	list-style-type: none;
+	text-align: center;
+}
+
+li {
+	list-style-type: none;
+}
+
+.nav-link .nav-item {
+	padding-left: 50px;
+	color: grey;
+}
+
+/*.table-score {
+	position: relative;
+	width: 50%;
+}
+
+.table-weather {
+	position: relative;
+	width: 50%;
+}*/
